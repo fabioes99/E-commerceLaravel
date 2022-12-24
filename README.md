@@ -8,7 +8,17 @@
 </p>
 
 ##Sobre o projeto
-E-commerce usando o VMC, onde as views e os layouts são definidos pelo blade.
+E-commerce usando o VMC
+As views e os layouts são definidos pelo arquivo tipo blade.
+Para rodar o server usar o comando php artisan serve
+Para criar os controller usar o comando php artisan make:controller nomeController
+Para criar uma migration padrao usar o comando php artisan migrate
+Para atualizar as tabelas usar o comando php artisan migrate:fresh
+Para criar uma migration nova usar o comando php artisan make:migration create_products_table
+
+
+
+
 
 ## About Laravel
 
