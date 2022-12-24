@@ -13,16 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+use App\Http\Controllers\Event;
 
-    $nome = "Fabio";
-    return view('welcome', ['nome' => $nome]);
-});
+Route::get('/', [Event::class, 'index'] ); //a view que retorna o html da pagina fica nos controllers
 
-Route::get('/contato', function () {
-    return view('contato');
-});
+Route::get('/events/create', [Event::class, 'create'] );
 
-Route::get('/produto/{id?}', function ($id = null) {
-    return view('produto', ['id' => $id]);
-});
+Route::get('/contact', [Event::class, 'contact'] );
+
+Route::get('/produto/{id?}',  [Event::class, 'produto'] );
