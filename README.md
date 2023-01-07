@@ -7,15 +7,15 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-##Sobre o projeto
-E-commerce usando o VMC
-As views e os layouts são definidos pelo arquivo tipo blade.
-Para rodar o server usar o comando php artisan serve
-Para criar os controller usar o comando php artisan make:controller nomeController
-Para criar uma migration padrao usar o comando php artisan migrate
-Para atualizar as tabelas usar o comando php artisan migrate:fresh
-Para criar uma migration nova usar o comando php artisan make:migration create_products_table
-Para alterar tabela usando migration php artisan make:migration add_category_to_products_table
+<h1>Sobre o projeto</h1>
+<h2>E-commerce usando o VMC</h2>
+As views e os layouts são definidos pelo arquivo tipo blade.<br>
+Para rodar o server usar o comando php artisan serve<br>
+Para criar os controller usar o comando php artisan make:controller nomeController<br>
+Para criar uma migration padrao usar o comando php artisan migrate<br>
+Para atualizar as tabelas usar o comando php artisan migrate:fresh<br>
+Para criar uma migration nova usar o comando php artisan make:migration create_products_table<br>
+Para alterar tabela usando migration php artisan make:migration add_category_to_products_table<br>
 
 
 
