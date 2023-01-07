@@ -42,7 +42,16 @@
           </div>
         </nav>
       </header>
-       @yield("content")
+      <main>
+        <div class="container-fluid">
+          <div class="row">
+            @if(session('msg'))
+            <div class="alert alert-success" role="alert"> {{ session('msg') }}</div>
+            @endif
+            @yield('content')
+          </div>
+        </div>
+      </main>
        <footer>
         <p>HDC Events &copy; 2020</p>
       </footer>

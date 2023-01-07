@@ -12,7 +12,6 @@ class EventController extends Controller
         
         $events = Event::all();
 
-
         return view('welcome', ['events' => $events]);
     }
 
@@ -22,6 +21,21 @@ class EventController extends Controller
 
     public function contact(){
         return view('contato');
+    }
+
+    public function store(Request $request){
+
+        $event = new Event();
+
+        $event->title = $request->title;
+        $event->descriptions = $request->descriptions;
+        $event->city = $request->city;
+        $event->private = $request->private;
+       
+        $event->save();
+
+        return redirect('/')->with('msg', 'Evento criado com sucesso!');
+
     }
 
 

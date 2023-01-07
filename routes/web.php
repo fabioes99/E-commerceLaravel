@@ -18,6 +18,7 @@ use App\Http\Controllers\EventController;
 Route::get('/', [EventController::class, 'index'] ); //a view que retorna o html da pagina fica nos controllers
 
 Route::get('/events/create', [EventController::class, 'create'] );
+Route::post('/events', [EventController::class, 'store']);
 
 Route::get('/contact', [EventController::class, 'contact'] );
 
