@@ -15,7 +15,7 @@ Para criar os controller usar o comando php artisan make:controller nomeControll
 Para criar uma migration padrao usar o comando php artisan migrate
 Para atualizar as tabelas usar o comando php artisan migrate:fresh
 Para criar uma migration nova usar o comando php artisan make:migration create_products_table
-
+Para alterar tabela usando migration php artisan make:migration add_category_to_products_table
 
 
 
