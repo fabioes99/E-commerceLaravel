@@ -14,12 +14,10 @@
         <link rel="stylesheet" href="/css/styles.css">
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="/css/styles.css">
+        <script src="/js/scripts.js"></script>
     </head>
     <body>
-    <script src="/js/scripts.js"></script>
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
       <header>
         <nav class=" navbar navbar-expand-lg navbar-light">
           <div class="collapse navbar-collapse" id="navbar">
@@ -55,7 +53,7 @@
        <footer>
         <p>HDC Events &copy; 2020</p>
       </footer>
-      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     </body>
     
 </html>

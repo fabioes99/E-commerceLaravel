@@ -8,41 +8,41 @@ use App\Models\Event;
 
 class EventController extends Controller
 {
-    public function index(){
-        
-        $events = Event::all();
+    
+    public function index() {
 
-        return view('welcome', ['events' => $events]);
+        $events = Event::all();
+    
+        return view('welcome',['events' => $events]);
+
     }
 
-    public function create(){
+    public function create() {
         return view('events.create');
     }
 
-    public function contact(){
-        return view('contato');
-    }
+    public function store(Request $request) {
 
-    public function store(Request $request){
-
-        $event = new Event();
+        $event = new Event;
 
         $event->title = $request->title;
-        $event->descriptions = $request->descriptions;
         $event->city = $request->city;
         $event->private = $request->private;
+        $event->description = $request->description;
 
-        if($request->hasFile('image') and $request->file('image')->isValid() ){
+        // Image Upload
+        if($request->hasFile('image') && $request->file('image')->isValid()) {
+
             $requestImage = $request->image;
 
             $extension = $requestImage->extension();
 
-            $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . '.' . $extension;
+            $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
 
-            $request->image->move(public_path('img/events'), $imageName);
+            $requestImage->move(public_path('img/events'), $imageName);
 
             $event->image = $imageName;
-           
+
         }
 
         $event->save();
@@ -51,5 +51,12 @@ class EventController extends Controller
 
     }
 
+    public function show($id) {
+
+        $event = Event::findOrFail($id);
+
+        return view('events.show', ['event' => $event]);
+        
+    }
 
 }
