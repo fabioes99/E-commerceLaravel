@@ -15,4 +15,12 @@ class Event extends Model
 
     protected $softDelete = false;
 
+    protected $casts = [
+        'items' => 'array'
+    ];
+
+    protected $dates = [
+       'date'
+    ];
+
 }
