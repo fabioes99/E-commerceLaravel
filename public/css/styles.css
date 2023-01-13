@@ -151,6 +151,22 @@ header {
   display: flex;
 }
 
+#description-container{
+  margin-top: 35px;
+}
+
+/*  dasboard */
+
+.dasboard-title-container{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.dasboard-events-container th{
+  width: 25%;
+
+}
+
 .card .card-date {
   font-size: 12px;
   color: #CCC;

@@ -23,7 +23,7 @@ Este para listar as rotas
 php artisan route:list
 
 E este para atualizar 
-$ php artisan route:cache
+php artisan route:cache
 
 
 ## About Laravel
