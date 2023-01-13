@@ -17,7 +17,13 @@ Para atualizar as tabelas usar o comando php artisan migrate:fresh<br>
 Para criar uma migration nova usar o comando php artisan make:migration create_products_table<br>
 Para alterar tabela usando migration php artisan make:migration add_category_to_products_table<br>
 
+<h1>Se der problemas com rotas rodar esses comandos</h1>
 
+Este para listar as rotas
+php artisan route:list
+
+E este para atualizar 
+$ php artisan route:cache
 
 
 ## About Laravel
