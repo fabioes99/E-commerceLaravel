@@ -167,6 +167,11 @@ header {
 
 }
 
+.dasboard-events-container form{
+  display: inline-block;
+
+}
+
 .card .card-date {
   font-size: 12px;
   color: #CCC;
@@ -183,6 +188,14 @@ header {
   font-size: 14px;
   color: #757575;
 }
+
+/* edit page */
+
+.img-preview {
+  width: 100px;
+  margin-top: 20px;
+}
+
 
 /* footer */
 footer {
