@@ -7,6 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+<img src="/public/img/banner.jpg" alt="License">
+
+
 <h1>Sobre o projeto</h1>
 <h2>E-commerce usando o VMC</h2>
 As views e os layouts são definidos pelo arquivo tipo blade.<br>
