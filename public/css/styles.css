@@ -227,3 +227,13 @@ footer p {
 {
   font-size: 12px;
 }
+
+
+.already-joined-msg{
+  margin: 15px 0;
+  border: 1px solid #B8DAFF;
+  padding: 10px;
+  color: #004085;
+  background-color: #CCE5FF;
+  width: 275px;
+}
